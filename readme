@@ -1,0 +1,13 @@
+simple-mailer
+
+This PHP mailer takes a comma-separated email list from subscribers.txt,
+another one from unsubscribers.txt, and sends a message stored in 
+mailer-message.html, to everyone in subscribers.txt. The mailer-message.html
+contains a '@RECEPIENT@' line which is replaced with the corresponding
+email every time it sends the mail to someone.
+
+Keep in mind that in order to unsubscribe people, you need to put this 
+to the /unsubscribe/ directory or otherwise change this directory in the
+PHP file and in the templates.
+
+This software depends on the PHP mail() function.
